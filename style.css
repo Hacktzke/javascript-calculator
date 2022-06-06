@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator Area */
+
+h1 {
+  margin: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  width: 330px;
+  height: 450px;
+  border: 2px solid black;
+  padding: 20px 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px auto;
+  gap: 15px;
+  box-shadow: 0 0 15px grey;
+  background-color: rgb(241, 241, 241);
+}
+
+.display-area {
+  grid-column: 1/6;
+  border: 2px solid black;
+  margin: 0 10px;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  overflow: hidden;
+}
+
+.display-history {
+  font-size: 1.1rem;
+}
+
+.btn {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  font-family: "Orbitron", sans-serif;
+  background-color: white;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Class for JS Event */
+
+.btn-change-style-hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Class for JS Event */
+
+.btn-change-style-click {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.equal {
+  grid-column: 5/6;
+  grid-row: 4/6;
+  background-color: lightblue;
+}
+
+.equal:hover {
+  background-color: rgb(108, 201, 231);
+}
+
+.clear {
+  background-color: lightcoral;
+}
+
+.clear:hover {
+  background-color: rgb(236, 105, 105);
+}
+
+/* Exit button */
+
+.exit-start-btn {
+  text-transform: uppercase;
+  margin: 2rem;
+  width: 150px;
+  height: 30px;
+  font-size: 0.8rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* Exit Area */
+
+.exit-area {
+  width: 330px;
+  height: 450px;
+  border: 2px solid black;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px grey;
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+#start-btn {
+  display: block;
+  margin: 1rem auto;
+}
+
+.exit-area-content h2,
+h3 {
+  margin: 1rem 0;
+}
+
+/* Hide Display - Keep at bottom - */
+.hide {
+  display: none;
+}
